@@ -39,7 +39,7 @@ while true do
             while true do
                 local buf,err=map_fd_sock[fd]:receive("*l")
                 if not buf then
-                    epoll.modify(epfd,fd,epoll.EPOLLOUT)
+                    epoll.modify(epfd,fd,bit.bor(epoll.EPOLLOUT,epoll.EPOLLET))
                     break
                 end
                 print(buf)
