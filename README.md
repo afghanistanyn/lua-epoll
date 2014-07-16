@@ -1,7 +1,7 @@
 lua-epoll
 =========
 
-epoll module for Lua
+Epoll module for Lua
 
 For more details, check out sample.lua.
 
@@ -9,7 +9,7 @@ API:
 ---
 
 #### ok,err=epoll.setnonblocking(fd)
-set a file descriptor nonblocking.
+Set a file descriptor nonblocking.
 
 #### epfd,err=epoll.create()
 Returns an epoll file descriptor.
