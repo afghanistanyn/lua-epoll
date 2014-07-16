@@ -31,3 +31,7 @@ Wait for events.
 #### ok,err=epoll.close(epfd)
 Close epoll file descriptor.
 
+License
+---
+
+This module is licensed under the Apache license.
