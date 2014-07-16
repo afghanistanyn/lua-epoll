@@ -1,8 +1,6 @@
 lua-epoll
 =========
 
-Lua的epoll模块
-
 epoll module for Lua
 
 For more details, check out sample.lua.
