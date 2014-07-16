@@ -5,7 +5,7 @@ Lua的epoll模块
 
 epoll module for Lua
 
-For more detail,check out sample.lua
+For more details, check out sample.lua.
 
 API:
 ---
