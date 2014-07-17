@@ -60,5 +60,5 @@ while true do
 end
 
 epoll.unregister(epfd,sfd)
-epoll.close(spfd)
+epoll.close(epfd)
 s:close()
