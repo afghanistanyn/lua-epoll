@@ -45,7 +45,7 @@ while true do
                 print(buf)
             end
         elseif bit.band(event,epoll.EPOLLOUT) ~= 0 then
-            ok,err=map_fd_sock[fd]:send("HTTP/1.0 200 OK\r\n\r\nhello\n")
+            local ok,err=map_fd_sock[fd]:send("HTTP/1.0 200 OK\r\n\r\nhello\n")
             if not ok then print(err) end
             epoll.unregister(epfd,fd)
             map_fd_sock[fd]:close()
